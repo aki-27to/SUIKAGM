@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8wt7fbn5dgl"]
+
+[ext_resource type="Script" path="res://fruit.gd" id="1_5c4i0"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_5c4i0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
