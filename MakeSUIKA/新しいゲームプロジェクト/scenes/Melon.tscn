@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs5tmwk7kccjk"]
+
+[ext_resource type="PackedScene" uid="uid://dmidlvbep11s4" path="res://Fruit.tscn" id="1_lnmmd"]
+
+[node name="RigidBody2D" instance=ExtResource("1_lnmmd")]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://hdgn1j0sfj6f"]
+
+[ext_resource type="PackedScene" uid="uid://dmidlvbep11s4" path="res://Fruit.tscn" id="1_an1o8"]
+[ext_resource type="Texture2D" uid="uid://ctqxw66i70yab" path="res://Assets/fruits/STRAWBERRY.png" id="2_c7qlj"]
+
+[node name="RigidBody2D" instance=ExtResource("1_an1o8")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_c7qlj")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-3, 13)

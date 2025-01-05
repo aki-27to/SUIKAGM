@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://cljuvbcw6k6ah"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_4uf3q"]
+[ext_resource type="Texture2D" uid="uid://dnjr0wp0yvifa" path="res://Assets/box.jpg" id="2_5umf3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdngf"]
+size = Vector2(538, 14.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sioia"]
+size = Vector2(23.0001, 524)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1nlwh"]
+size = Vector2(12.9999, 529.5)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_4uf3q")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score: 0"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(593, 325)
+scale = Vector2(0.81155, 0.786352)
+texture = ExtResource("2_5umf3")
+
+[node name="Bottom" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(592, 629.75)
+shape = SubResource("RectangleShape2D_fdngf")
+
+[node name="Left" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(330.5, 363)
+shape = SubResource("RectangleShape2D_sioia")
+
+[node name="Right" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(855.5, 366.25)
+shape = SubResource("RectangleShape2D_1nlwh")

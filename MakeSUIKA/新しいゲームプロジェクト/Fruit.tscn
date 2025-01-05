@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmidlvbep11s4"]
+
+[ext_resource type="Script" path="res://Scripts/fruit.gd" id="1_1gfcn"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_1gfcn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(14.9988, 19.9985)
+scale = Vector2(0.001, 0.001)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(96, 111)
